@@ -5,6 +5,27 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 /* UTILITIES */
 
 /* .debug,
@@ -12,40 +33,58 @@
   border: 3px dashed red;
   padding: 6px;
   min-height: 30px;
+} */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
- */
+
 /* LAYOUT */
 
 .global-container {
   overflow: hidden;
-  background-color: green;
-  height: calc(100vh - 70px);
+  background-color: #141318;
+  height: calc(100vh - 80px);
   display: flex;
 }
 
 .main-sidebar {
   overflow: hidden;
-  background-color: aqua;
-  width: 100px;
+  background-color: #141318;
+  width: 80px;
 }
 
 .main-list-chat {
-  background-color: yellow;
-  width: calc(100% - 100px);
+  background-color: #1c1d22;
+  width: calc(100% - 80px);
   color: white;
-  overflow: hidden;
+  overflow: auto;
+  border-top-left-radius: 20px;
 }
 
-/* FOOTER */
+/* SIDEBAR */
+.sidebar-items {
+  margin-top: 1rem;
+}
+
+.discord-server-item {
+  width: 3.5rem;
+  margin: 0 auto;
+  padding: 6px 0;
+}
+
+.server-cicle img {
+  border-radius: 50%;
+}
+
+/* MAIN CONTENT */
+
+.main-btn {
+}
 
 /* NAVBAR */
 .footer-nav-bar {
   height: 80px;
   background-color: brown;
+  overflow: hidden;
 }
-
-/* HEADER */
-
-/* SIDEBAR */
-
-/* NAVBAR */

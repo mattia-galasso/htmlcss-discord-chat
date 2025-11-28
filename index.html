@@ -4,24 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Mattia Galasso" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <title>My Project</title>
+    <title>Discord Chat</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="./img/logo.webp" type="image/webp" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sigmar&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <div class="global-container">
-      <header class="debug main-sidebar"></header>
+      <!-- SIDEBAR LATERALE -->
+      <header class="main-sidebar">
+        <ul class="sidebar-items">
+          <li class="active discord-server-item">
+            <a href="#"
+              ><img class="" src="./img/logo.webp" alt="Logo Discord"
+            /></a>
+          </li>
+          <li class="active discord-server-item server-cicle">
+            <a href="#"
+              ><img src="./img/server_arte.png" alt="Server Discord Arte"
+            /></a>
+          </li>
+          <li class="active discord-server-item server-cicle">
+            <a href="#"
+              ><img src="./img/server_boolean.png" alt="Server Discord Boolean"
+            /></a>
+          </li>
+          <li class="active discord-server-item server-cicle">
+            <a href="#"
+              ><img src="./img/server_italia.png" alt="Server Discord Italia"
+            /></a>
+          </li>
+          <li class="active discord-server-item server-cicle">
+            <a href="#"
+              ><img
+                src="./img/server_nintendo.png"
+                alt="Server Discord Nintendo"
+            /></a>
+          </li>
+          <li class="active discord-server-item server-cicle">
+            <a href="#"
+              ><img
+                src="./img/server_javascript.png"
+                alt="Server Discord Javascript"
+            /></a>
+          </li>
+          <li class="active discord-server-item server-cicle">
+            <a href="#"
+              ><img src="./img/server_pokemon.png" alt="Server Discord Pokemon"
+            /></a>
+          </li>
+        </ul>
+      </header>
+
+      <!-- CONTENUTO DELLA PAGINA -->
       <main class="debug main-list-chat">
         <header>
-          <h1>Messaggi</h1>
+          <h1 class="main-title">Messaggi</h1>
+          <div class="main-btn">
+            <button class="search-btn"><i class="bi bi-search"></i></button>
+            <button class="add-friend-btn">Aggiungi amici</button>
+          </div>
         </header>
       </main>
-      <footer class="debug footer-nav-bar">
-        <nav>NAV BAR</nav>
-      </footer>
     </div>
+
+    <!-- NAVBAR FOOTER  -->
+    <footer class="debug footer-nav-bar">
+      <nav>NAVBAR</nav>
+    </footer>
   </body>
 </html>
