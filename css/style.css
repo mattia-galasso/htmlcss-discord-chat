@@ -73,10 +73,39 @@ body {
   width: 3.5rem;
   margin: 0 auto;
   padding: 6px 0;
+  position: relative;
 }
 
 .server-cicle img {
   border-radius: 50%;
+}
+
+.current-server {
+  position: absolute;
+  top: 8px;
+  left: -15px;
+  width: 0.5rem;
+  height: 3.4rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.active {
+  transition: transform 0.3s ease;
+}
+
+.discord-server-item:hover .sidebar-effect {
+  position: absolute;
+  top: 8px;
+  left: -15px;
+  width: 0.5rem;
+  height: 3.4rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.discord-server-item:hover .active {
+  transform: scale(107%);
 }
 
 /* MAIN CONTENT */
