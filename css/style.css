@@ -28,13 +28,6 @@ button {
 
 /* UTILITIES */
 
-/* .debug,
-.debug > * {
-  border: 3px dashed red;
-  padding: 6px;
-  min-height: 30px;
-} */
-
 body {
   font-family: "DM Sans", sans-serif;
 }
@@ -228,6 +221,24 @@ body {
 .contact-card:hover .profile-info,
 .contact-card:hover .time-message {
   opacity: 1;
+}
+
+/* NEW CHAT BUTTON */
+.new-chat-btn {
+  position: fixed;
+  bottom: 85px;
+  right: 30px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #5865f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.new-chat-btn button {
+  font-size: 1.1rem;
 }
 
 /* NAVBAR */
