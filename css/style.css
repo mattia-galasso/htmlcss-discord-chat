@@ -204,6 +204,44 @@ body {
 /* NAVBAR */
 .footer-nav-bar {
   height: 75px;
-  background-color: brown;
-  overflow: hidden;
+  background-color: #2d2d35;
+  color: white;
+}
+
+.nav-menu-footer {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.me-profile-image {
+  margin: 0 auto;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.nav-menu-item {
+  text-align: center;
+  padding: 0 5px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+}
+
+.nav-text {
+  padding-top: 2px;
+  font-size: 0.7rem;
 }
