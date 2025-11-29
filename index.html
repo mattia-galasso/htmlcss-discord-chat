@@ -76,13 +76,223 @@
 
       <!-- CONTENUTO DELLA PAGINA -->
       <main class="debug main-list-chat">
-        <header>
+        <header class="main-header-chat">
           <h1 class="main-title">Messaggi</h1>
-          <div class="main-btn">
-            <button class="search-btn"><i class="bi bi-search"></i></button>
-            <button class="add-friend-btn">Aggiungi amici</button>
+          <div class="main-buttons">
+            <button class="search-btn main-btn">
+              <i class="bi bi-search"></i>
+            </button>
+            <button class="add-friend-btn main-btn">
+              <i class="bi bi-person-fill-add"></i> Aggiungi amici
+            </button>
           </div>
         </header>
+        <ul class="contacts-list">
+          <li class="contact-card">
+            <div class="contact-info">
+              <div class="status-image">
+                <div class="profile-status not-disturb-status"></div>
+                <img
+                  class="contact-image"
+                  src="./img/profile1.webp"
+                  alt="Profile Image"
+                />
+              </div>
+              <div class="profile-info">
+                <span>Giuseppe Rossi</span>
+                <p>ciao! tutto bene?</p>
+              </div>
+            </div>
+            <span class="time-message">2min</span>
+          </li>
+          <li class="contact-card">
+            <div class="contact-info">
+              <div class="status-image">
+                <div class="profile-status inactive-status"></div>
+                <img
+                  class="contact-image"
+                  src="./img/profile2.webp"
+                  alt="Profile Image"
+                />
+              </div>
+              <div class="profile-info">
+                <span>Francesco Bianchi</span>
+                <p>Tu: perfetto,grazie!</p>
+              </div>
+            </div>
+            <span class="time-message">5min</span>
+          </li>
+          <li class="contact-card">
+            <div class="contact-info">
+              <div class="status-image">
+                <div class="profile-status inactive-status"></div>
+                <img
+                  class="contact-image"
+                  src="./img/profile12.webp"
+                  alt="Profile Image"
+                />
+              </div>
+              <div class="profile-info">
+                <span>Giulio Moretti</span>
+                <p>Tu: ottimo lavoro!</p>
+              </div>
+            </div>
+            <span class="time-message">8min</span>
+          </li>
+          <li class="contact-card">
+            <div class="contact-info">
+              <div class="status-image">
+                <div class="profile-status available-status"></div>
+                <img
+                  class="contact-image"
+                  src="./img/profile3.webp"
+                  alt="Profile Image"
+                />
+              </div>
+              <div class="profile-info">
+                <span>Lucia Ferrari</span>
+                <p>grazie mille per tutto</p>
+              </div>
+            </div>
+            <span class="time-message">12min</span>
+          </li>
+          <li class="contact-card">
+            <div class="contact-info">
+              <div class="status-image">
+                <div class="profile-status not-disturb-status"></div>
+                <img
+                  class="contact-image"
+                  src="./img/profile4.webp"
+                  alt="Profile Image"
+                />
+              </div>
+              <div class="profile-info">
+                <span>Stefano Romano</span>
+                <p>Tu: ci sentiamo dopo</p>
+              </div>
+            </div>
+            <span class="time-message">18min</span>
+          </li>
+          <li class="contact-card">
+            <div class="contact-info">
+              <div class="status-image">
+                <div class="profile-status inactive-status"></div>
+                <img
+                  class="contact-image"
+                  src="./img/profile5.webp"
+                  alt="Profile Image"
+                />
+              </div>
+              <div class="profile-info">
+                <span>Alessandra Conti</span>
+                <p>quando hai tempo chiamami</p>
+              </div>
+            </div>
+            <span class="time-message">25min</span>
+          </li>
+          <li class="contact-card">
+            <div class="contact-info">
+              <div class="status-image">
+                <div class="profile-status available-status"></div>
+                <img
+                  class="contact-image"
+                  src="./img/profile6.webp"
+                  alt="Profile Image"
+                />
+              </div>
+              <div class="profile-info">
+                <span>Elena Martini</span>
+                <p>Tu: Hai visto il messaggio?</p>
+              </div>
+            </div>
+            <span class="time-message">45min</span>
+          </li>
+          <li class="contact-card">
+            <div class="contact-info">
+              <div class="status-image">
+                <div class="profile-status inactive-status"></div>
+                <img
+                  class="contact-image"
+                  src="./img/profile7.webp"
+                  alt="Profile Image"
+                />
+              </div>
+              <div class="profile-info">
+                <span>Matteo Greco</span>
+                <p>ho finito il progetto</p>
+              </div>
+            </div>
+            <span class="time-message">12min</span>
+          </li>
+          <li class="contact-card">
+            <div class="contact-info">
+              <div class="status-image">
+                <div class="profile-status not-disturb-status"></div>
+                <img
+                  class="contact-image"
+                  src="./img/profile8.webp"
+                  alt="Profile Image"
+                />
+              </div>
+              <div class="profile-info">
+                <span>Marta Cortina</span>
+                <p>Tu: lato nostro non ci sono problemi</p>
+              </div>
+            </div>
+            <span class="time-message">1h</span>
+          </li>
+          <li class="contact-card">
+            <div class="contact-info">
+              <div class="status-image">
+                <div class="profile-status available-status"></div>
+                <img
+                  class="contact-image"
+                  src="./img/profile9.webp"
+                  alt="Profile Image"
+                />
+              </div>
+              <div class="profile-info">
+                <span>Francesca Bianchi</span>
+                <p>Tu: perfetto,grazie!</p>
+              </div>
+            </div>
+            <span class="time-message">5min</span>
+          </li>
+          <li class="contact-card">
+            <div class="contact-info">
+              <div class="status-image">
+                <div class="profile-status available-status"></div>
+                <img
+                  class="contact-image"
+                  src="./img/profile10.webp"
+                  alt="Profile Image"
+                />
+              </div>
+              <div class="profile-info">
+                <span>Giulio Moretti</span>
+                <p>Tu: ottimo lavoro!</p>
+              </div>
+            </div>
+            <span class="time-message">8min</span>
+          </li>
+          <li class="contact-card">
+            <div class="contact-info">
+              <div class="status-image">
+                <div class="profile-status inactive-status"></div>
+                <img
+                  class="contact-image"
+                  src="./img/profile11.webp"
+                  alt="Profile Image"
+                />
+              </div>
+              <div class="profile-info">
+                <span>Lucia Ferrari</span>
+                <p>grazie mille per tutto</p>
+              </div>
+            </div>
+            <span class="time-message">12min</span>
+          </li>
+        </ul>
       </main>
     </div>
 

@@ -36,7 +36,7 @@ button {
 } */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* LAYOUT */
@@ -44,7 +44,7 @@ body {
 .global-container {
   overflow: hidden;
   background-color: #141318;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 75px);
   display: flex;
 }
 
@@ -55,11 +55,13 @@ body {
 }
 
 .main-list-chat {
+  margin-top: 8px;
   background-color: #1c1d22;
   width: calc(100% - 80px);
   color: white;
-  overflow: auto;
   border-top-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* SIDEBAR */
@@ -79,12 +81,129 @@ body {
 
 /* MAIN CONTENT */
 
+.main-header-chat {
+  padding: 30px 20px 0 30px;
+}
+
+.main-title {
+  font-size: 25px;
+}
+
+/* BUTTONS */
+.main-buttons {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 .main-btn {
+  background-color: #373a43;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.add-friend-btn {
+  width: calc(100% - 50px);
+  border-radius: 25px;
+}
+
+/* CONTACT */
+.contacts-list {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.contact-card {
+  margin: 5px 10px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-image {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-info span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.profile-info p {
+  font-size: 0.8rem;
+}
+
+.time-message {
+  font-size: 0.8rem;
+}
+
+/* CIRCLE PROFILE STATUS */
+.status-image {
+  position: relative;
+}
+
+.profile-status {
+  position: absolute;
+  bottom: 7px;
+  left: 38px;
+  translate: -50% 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 5px solid #1c1d22;
+}
+
+.not-disturb-status {
+  background-color: #f94349;
+}
+
+.inactive-status {
+  background-color: #f4a71b;
+}
+
+.available-status {
+  background-color: #39a65d;
+}
+
+/* OPACITY AND HOVER EFFECT */
+.contact-card .profile-info,
+.contact-card .time-message {
+  opacity: 0.5;
+}
+
+.contact-card:hover {
+  background-color: #26262e;
+  border-radius: 15px;
+}
+
+.contact-card:hover .profile-status {
+  border: 5px solid #26262e;
+}
+
+.contact-card:hover .profile-info,
+.contact-card:hover .time-message {
+  opacity: 1;
 }
 
 /* NAVBAR */
 .footer-nav-bar {
-  height: 80px;
+  height: 75px;
   background-color: brown;
   overflow: hidden;
 }
